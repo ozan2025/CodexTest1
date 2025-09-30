@@ -1,0 +1,58 @@
+{
+  "customers": [
+    {
+      "id": "CUST-001",
+      "name": "Alice Johnson",
+      "address": "123 Maple Street",
+      "phone": "555-0101",
+      "preferred_window": "Weekdays 8am-12pm"
+    },
+    {
+      "id": "CUST-002",
+      "name": "Brian Smith",
+      "address": "456 Oak Avenue",
+      "phone": "555-0110",
+      "preferred_window": "Weekends 10am-4pm"
+    }
+  ],
+  "technicians": [
+    {
+      "id": "TECH-101",
+      "name": "Carla Nguyen",
+      "skills": ["HVAC diagnostics", "Heat pump repair"],
+      "availability": [
+        "2024-06-15T09:00:00",
+        "2024-06-15T13:00:00",
+        "2024-06-16T10:30:00"
+      ]
+    },
+    {
+      "id": "TECH-102",
+      "name": "Darius Patel",
+      "skills": ["Air duct cleaning", "Thermostat install"],
+      "availability": [
+        "2024-06-15T11:00:00",
+        "2024-06-16T08:00:00",
+        "2024-06-17T15:00:00"
+      ]
+    }
+  ],
+  "service_requests": [
+    {
+      "id": "REQ-9001",
+      "customer_id": "CUST-001",
+      "technician_id": "TECH-101",
+      "status": "completed",
+      "summary": "Replaced air filter and recalibrated thermostat",
+      "scheduled_for": "2024-05-01T10:00:00"
+    },
+    {
+      "id": "REQ-9002",
+      "customer_id": "CUST-002",
+      "technician_id": "TECH-102",
+      "status": "scheduled",
+      "summary": "Annual maintenance",
+      "scheduled_for": "2024-06-16T10:30:00"
+    }
+  ]
+}
